@@ -1,0 +1,6 @@
+#ifndef __C_BUFFER_REQUIREMENTS__
+#define __C_BUFFER_REQUIREMENTS__
+
+#define D_DEFAULT_MEM_STEP 256
+
+#endif

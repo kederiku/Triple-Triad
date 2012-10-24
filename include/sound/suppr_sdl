@@ -1,0 +1,4291 @@
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Param
+		writev(vector[...])
+		fun:writev
+		fun:pthread_mutex_lock
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Param
+		writev(vector[...])
+		fun:writev
+		obj:/usr/lib/i386-linux-gnu/libxcb.so.1.1.0
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Param
+		writev(vector[...])
+		fun:writev
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Cond
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_update_r
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:SDL_CreateMutex
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:snd_config_update_r
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:snd_config_update_r
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_tls_new
+		obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+		fun:pa_run_once
+		fun:pa_thread_self
+		fun:pa_threaded_mainloop_free
+		fun:pa_simple_free
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:realloc
+		fun:_XimParseStringFile
+		fun:_XimLocalOpenIM
+		fun:_XimOpenIM
+		fun:XOpenIM
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:xcb_connect_to_fd
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_XrmInternalStringToQuark
+		fun:XrmStringToQuark
+		fun:_XlcGetCharSet
+		fun:_XlcAddCT
+		fun:_XlcInitCTInfo
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLC
+		fun:_XlcUtf8Loader
+		fun:_XOpenLC
+		fun:_XlcCurrentLC
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:realloc
+		fun:xcb_connect_to_fd
+		fun:xcb_connect_to_display_with_auth_info
+		fun:xcb_connect
+		fun:_XConnectXCB
+		fun:XOpenDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:realloc
+		fun:xcb_connect_to_fd
+		fun:xcb_connect_to_display_with_auth_info
+		fun:xcb_connect
+		fun:_XConnectXCB
+		fun:XOpenDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:XRenderQueryFormats
+		fun:XRenderQueryVersion
+		fun:_XcursorGetDisplayInfo
+		fun:XcursorSupportsARGB
+		fun:XcursorNoticeCreateBitmap
+		fun:_XNoticeCreateBitmap
+		fun:XCreatePixmap
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_XlcCreateLocaleDataBase
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_dl_new_object
+		fun:_dl_map_object_from_fd
+		fun:_dl_map_object
+		fun:openaux
+		fun:_dl_catch_error
+		fun:dl_open_worker
+		fun:_dl_catch_error
+		fun:dlopen_doit
+		fun:_dl_catch_error
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLC
+		fun:_XlcUtf8Loader
+		fun:_XOpenLC
+		fun:_XlcCurrentLC
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XimSetICResourceList
+		fun:_XimLocalOpenIM
+		fun:_XimOpenIM
+		fun:XOpenIM
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_dl_new_object
+		fun:_dl_map_object_from_fd
+		fun:_dl_map_object
+		fun:dl_open_worker
+		fun:_dl_catch_error
+		fun:dlopen_doit
+		fun:_dl_catch_error
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:__new_exitfn
+		fun:__internal_atexit
+		fun:_GLOBAL__sub_I__ZN5Lib2D5MultiC2Ev
+		fun:__libc_csu_init
+		fun:(below main)
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLocaleDataBase
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_XimLocalCreateIC
+		fun:XCreateIC
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:_XcursorGetDisplayInfo
+		fun:XcursorSupportsARGB
+		fun:XcursorNoticeCreateBitmap
+		fun:_XNoticeCreateBitmap
+		fun:XCreatePixmap
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_XlcCreateLocaleDataBase
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_xmemdup
+		fun:pa_client_conf_new
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_dl_check_map_versions
+		fun:dl_open_worker
+		fun:_dl_catch_error
+		fun:dlopen_doit
+		fun:_dl_catch_error
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_XimOpenIM
+		fun:XOpenIM
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:XkbUseExtension
+		fun:XOpenDisplay
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:XInitExtension
+		fun:XkbUseExtension
+		fun:XOpenDisplay
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XimSetIMResourceList
+		fun:_XimLocalOpenIM
+		fun:_XimOpenIM
+		fun:XOpenIM
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_mempool_new
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLC
+		fun:_XlcDefaultLoader
+		fun:_XOpenLC
+		fun:_XlcCurrentLC
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLC
+		fun:_XlcDefaultLoader
+		fun:_XOpenLC
+		fun:_XrmInitParseInfo
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XrmGetStringDatabase
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XGetDefault
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:_dl_new_object
+		fun:_dl_map_object_from_fd
+		fun:_dl_map_object
+		fun:openaux
+		fun:_dl_catch_error
+		fun:dl_open_worker
+		fun:_dl_catch_error
+		fun:dlopen_doit
+		fun:_dl_catch_error
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:local_strdup
+		fun:_dl_map_object
+		fun:openaux
+		fun:_dl_catch_error
+		fun:dl_open_worker
+		fun:_dl_catch_error
+		fun:dlopen_doit
+		fun:_dl_catch_error
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:XAddExtension
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XShmQueryExtension
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XShmQueryExtension
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:realloc
+		obj:/usr/lib/i386-linux-gnu/libxcb.so.1.1.0
+		fun:xcb_get_extension_data
+		fun:xcb_prefetch_maximum_request_length
+		fun:xcb_get_maximum_request_length
+		fun:XOpenDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:realloc
+		obj:/usr/lib/i386-linux-gnu/libxcb.so.1.1.0
+		fun:xcb_get_extension_data
+		fun:xcb_prefetch_maximum_request_length
+		fun:xcb_get_maximum_request_length
+		fun:XOpenDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:XInitExtension
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:XInitExtension
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XShmQueryExtension
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:XInitExtension
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XShmQueryExtension
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:XInitExtension
+		fun:XRenderFindDisplay
+		fun:XRenderQueryExtension
+		fun:_XcursorGetDisplayInfo
+		fun:XcursorSupportsARGB
+		fun:XcursorNoticeCreateBitmap
+		fun:_XNoticeCreateBitmap
+		fun:XCreatePixmap
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:XAddExtension
+		fun:_XcursorGetDisplayInfo
+		fun:XcursorSupportsARGB
+		fun:XcursorNoticeCreateBitmap
+		fun:_XNoticeCreateBitmap
+		fun:XCreatePixmap
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_XConnectXCB
+		fun:XOpenDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:SDL_CreateRGBSurface
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_XConnectXCB
+		fun:XOpenDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:realloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLocaleDataBase
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_cond_new
+		fun:pa_threaded_mainloop_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_cond_new
+		fun:pa_threaded_mainloop_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_XlcCreateDefaultCharSet
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:realloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLC
+		fun:_XlcUtf8Loader
+		fun:_XOpenLC
+		fun:_XlcCurrentLC
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:_dl_new_object
+		fun:_dl_map_object_from_fd
+		fun:_dl_map_object
+		fun:dl_open_worker
+		fun:_dl_catch_error
+		fun:dlopen_doit
+		fun:_dl_catch_error
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:local_strdup
+		fun:_dl_map_object
+		fun:dl_open_worker
+		fun:_dl_catch_error
+		fun:dlopen_doit
+		fun:_dl_catch_error
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XimSetLocalIMDefaults
+		fun:_XimLocalOpenIM
+		fun:_XimOpenIM
+		fun:XOpenIM
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:XOpenDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:XOpenDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:pa_xmalloc0
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_xmemdup
+		fun:pa_xstrdup
+		fun:pa_flist_new_with_name
+		obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+		fun:pa_run_once
+		fun:pa_hashmap_put
+		fun:pa_proplist_sets
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_threaded_mainloop_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+		fun:pa_cstrerror
+		obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+		fun:pa_socket_client_new_sockaddr
+		fun:pa_socket_client_new_unix
+		fun:pa_socket_client_new_string
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_mutex_new
+		fun:pa_mempool_new
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_hashmap_put
+		fun:pa_proplist_sets
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_mutex_new
+		fun:pa_threaded_mainloop_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:realloc
+		fun:_XlcResolveLocaleName
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_XcmsAddCmapRec
+		fun:XCreateColormap
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:SDL_CreateMutex
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_xmemdup
+		fun:pa_xstrdup
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_xstrndup
+		fun:pa_split_spaces
+		obj:/usr/lib/i386-linux-gnu/libpulse.so.0.13.5
+		obj:/usr/lib/i386-linux-gnu/libpulse.so.0.13.5
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_dlerror_run
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_semaphore_new
+		fun:pa_mempool_new
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XimSetLocalIMDefaults
+		fun:_XimLocalOpenIM
+		fun:_XimOpenIM
+		fun:XOpenIM
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:XRenderFindDisplay
+		fun:XRenderQueryExtension
+		fun:_XcursorGetDisplayInfo
+		fun:XcursorSupportsARGB
+		fun:XcursorNoticeCreateBitmap
+		fun:_XNoticeCreateBitmap
+		fun:XCreatePixmap
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_xmemdup
+		fun:pa_xstrdup
+		fun:pa_client_conf_new
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_xmemdup
+		fun:pa_xstrdup
+		fun:pa_proplist_sets
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_proplist_sets
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLC
+		fun:_XlcUtf8Loader
+		fun:_XOpenLC
+		fun:_XlcCurrentLC
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:XextCreateExtension
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XShmQueryExtension
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:XextCreateExtension
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XShmQueryExtension
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLC
+		fun:_XlcDefaultLoader
+		fun:_XOpenLC
+		fun:_XrmInitParseInfo
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XrmGetStringDatabase
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XGetDefault
+		fun:_XcursorGetDisplayInfo
+		fun:XcursorSupportsARGB
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_xmemdup
+		fun:pa_xstrdup
+		fun:pa_flist_new_with_name
+		fun:pa_flist_new
+		fun:pa_mempool_new
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		fun:_XlcOpenConverter
+		fun:_XimLocalOpenIM
+		fun:_XimOpenIM
+		fun:XOpenIM
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XextAddDisplay
+		obj:/usr/lib/i386-linux-gnu/libXext.so.6.4.0
+		fun:XShmQueryExtension
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		obj:/usr/lib/i386-linux-gnu/libxcb.so.1.1.0
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:realloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLC
+		fun:_XlcDefaultLoader
+		fun:_XOpenLC
+		fun:_XrmInitParseInfo
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XrmGetStringDatabase
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XGetDefault
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:_XlcAddLoader
+		fun:_XlcInitLoader
+		fun:_XOpenLC
+		fun:_XrmInitParseInfo
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XrmGetStringDatabase
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XGetDefault
+		fun:_XcursorGetDisplayInfo
+		fun:XcursorSupportsARGB
+		fun:XcursorNoticeCreateBitmap
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+		fun:pa_log_set_ident
+		obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+		fun:pa_log_levelv_meta
+		fun:pa_log_level_meta
+		fun:pa_mempool_new
+		fun:pa_context_new_with_proplist
+		fun:pa_context_new
+		fun:pa_simple_new
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:pa_xmalloc
+		fun:pa_tls_new
+		obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+		fun:pa_run_once
+		fun:pa_cstrerror
+		obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+		fun:pa_socket_client_new_sockaddr
+		fun:pa_socket_client_new_unix
+		fun:pa_socket_client_new_string
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:_XimOpenIM
+		fun:XOpenIM
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_CreateCursor
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:_XrmDefaultInitParseInfo
+		fun:_XrmInitParseInfo
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XrmGetStringDatabase
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XGetDefault
+		fun:_XcursorGetDisplayInfo
+		fun:XcursorSupportsARGB
+		fun:XcursorNoticeCreateBitmap
+		fun:_XNoticeCreateBitmap
+		fun:XCreatePixmap
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:_XlcCreateLC
+		fun:_XlcDefaultLoader
+		fun:_XOpenLC
+		fun:_XrmInitParseInfo
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XrmGetStringDatabase
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:XGetDefault
+		fun:_XcursorGetDisplayInfo
+		fun:XcursorSupportsARGB
+		fun:XcursorNoticeCreateBitmap
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:_XimOpenIM
+		fun:XOpenIM
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:realloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLC
+		fun:_XlcUtf8Loader
+		fun:_XOpenLC
+		fun:_XlcCurrentLC
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_searcha_hooks
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+		obj:*
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_searcha_hooks
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_searcha_hooks
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+}
+
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:realloc
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		obj:/usr/lib/i386-linux-gnu/libX11.so.6.3.0
+		fun:_XlcCreateLC
+		fun:_XlcDefaultLoader
+		fun:_XOpenLC
+		fun:_XlcCurrentLC
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Param
+		semctl(IPC_SET, arg.buf)
+		fun:semctl@@GLIBC_2.2
+		obj:*
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Param
+		writev(vector[...])
+		fun:writev
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:_XlcDefaultMapModifiers
+		fun:XSetLocaleModifiers
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_VideoInit
+		fun:SDL_InitSubSystem
+		fun:main
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:*
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:strdup
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		fun:snd_config_hook_load_for_all_cards
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:strdup
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:strdup
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:strdup
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_searcha_hooks
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:strdup
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_update
+		fun:snd_pcm_open
+		obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+		fun:SDL_AudioInit
+		fun:SDL_InitSubSystem
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:strdup
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:*
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:malloc
+		fun:strdup
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_pcm_dmix_open
+		fun:_snd_pcm_dmix_open
+		obj:*
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_searcha_hooks
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_search_definition
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+	<insert_a_suppression_name_here>
+		Memcheck:Leak
+		fun:calloc
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_hook_load
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_searcha_hooks
+		obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+		fun:snd_config_search_definition
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_tls_new
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_run_once
+   fun:pa_cstrerror
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_socket_client_new_sockaddr
+   fun:pa_socket_client_new_unix
+   fun:pa_socket_client_new_string
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xmemdup
+   fun:pa_xstrdup
+   fun:pa_flist_new_with_name
+   fun:pa_flist_new
+   fun:pa_mempool_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_log_set_ident
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_log_levelv_meta
+   fun:pa_log_level_meta
+   fun:pa_mempool_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_proplist_sets
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xmemdup
+   fun:pa_xstrdup
+   fun:pa_proplist_sets
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xmemdup
+   fun:pa_xstrdup
+   fun:pa_client_conf_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_semaphore_new
+   fun:pa_mempool_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xmemdup
+   fun:pa_xstrdup
+   fun:pa_proplist_sets
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xmemdup
+   fun:pa_xstrdup
+   fun:pa_client_conf_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xmemdup
+   fun:pa_xstrdup
+   fun:pa_client_conf_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xstrndup
+   fun:pa_split_spaces
+   obj:/usr/lib/i386-linux-gnu/libpulse.so.0.13.5
+   obj:/usr/lib/i386-linux-gnu/libpulse.so.0.13.5
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xmemdup
+   fun:pa_xstrdup
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_mutex_new
+   fun:pa_threaded_mainloop_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_hashmap_put
+   fun:pa_proplist_sets
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_mutex_new
+   fun:pa_mempool_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_cstrerror
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_socket_client_new_sockaddr
+   fun:pa_socket_client_new_unix
+   fun:pa_socket_client_new_string
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_threaded_mainloop_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xmemdup
+   fun:pa_xstrdup
+   fun:pa_flist_new_with_name
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_run_once
+   fun:pa_hashmap_put
+   fun:pa_proplist_sets
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:pa_xmalloc0
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_cond_new
+   fun:pa_threaded_mainloop_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_cond_new
+   fun:pa_threaded_mainloop_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_mempool_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:pa_xmalloc0
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:pa_xmalloc0
+   fun:pa_mainloop_new
+   fun:pa_threaded_mainloop_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:_ZnwjRKSt9nothrow_t
+   fun:_ZN11c_singletonI15c_sound_managerE12get_instanceEv
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xmemdup
+   fun:pa_client_conf_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:pa_xmalloc0
+   fun:pa_hashmap_new
+   fun:pa_proplist_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:pa_xmalloc0
+   fun:pa_hashmap_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:pa_xmalloc0
+   fun:pa_hashmap_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:pa_xmalloc0
+   fun:pa_flist_new_with_name
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_run_once
+   fun:pa_hashmap_put
+   fun:pa_proplist_sets
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:pa_xmalloc0
+   fun:pa_flist_new_with_name
+   fun:pa_flist_new
+   fun:pa_mempool_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Param
+   semctl(IPC_SET, arg.buf)
+   fun:semctl@@GLIBC_2.2
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Overlap
+   fun:memcpy
+   fun:snd_pcm_area_copy
+   fun:snd_pcm_areas_copy
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_tls_new
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_run_once
+   fun:pa_cstrerror
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_socket_client_new_sockaddr
+   fun:pa_socket_client_new_unix
+   fun:pa_socket_client_new_string
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_tls_new
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_run_once
+   fun:pa_thread_self
+   fun:pa_threaded_mainloop_free
+   fun:pa_simple_free
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:snd_config_update_r
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_log_set_ident
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_log_levelv_meta
+   fun:pa_log_level_meta
+   fun:pa_mempool_new
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_pcm_dmix_open
+   fun:_snd_pcm_dmix_open
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_empty_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_asym_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_empty_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_softvol_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_plug_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:snd_config_update_r
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_plug_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_asym_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_empty_open
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_search_definition
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_hashmap_put
+   fun:pa_proplist_sets
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:pa_xmalloc0
+   fun:pa_thread_self
+   fun:pa_threaded_mainloop_free
+   fun:pa_simple_free
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:SDL_CreateMutex
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_CreateThread
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_cstrerror
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_socket_client_new_sockaddr
+   fun:pa_socket_client_new_unix
+   fun:pa_socket_client_new_string
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_pcm_rate_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_empty_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_asym_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_empty_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_plug_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_asym_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_empty_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_softvol_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_plug_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:_snd_pcm_asym_open
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_pcm_dmix_open
+   fun:_snd_pcm_dmix_open
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_pcm_rate_open
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:pa_xmalloc
+   fun:pa_xmemdup
+   fun:pa_xstrdup
+   fun:pa_flist_new_with_name
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_run_once
+   fun:pa_hashmap_put
+   fun:pa_proplist_sets
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update_r
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+   fun:main
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_search_definition
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_search_definition
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_search_definition
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_search_definition
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+   fun:_ZN15c_sound_manager17init_audio_deviceEithj
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   fun:pa_xmalloc0
+   fun:pa_flist_new_with_name
+   obj:/usr/lib/i386-linux-gnu/libpulsecommon-1.1.so
+   fun:pa_run_once
+   fun:pa_hashmap_put
+   fun:pa_proplist_sets
+   fun:pa_context_new_with_proplist
+   fun:pa_context_new
+   fun:pa_simple_new
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_searcha_hooks
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_search_definition
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_update
+   fun:snd_pcm_open
+   obj:/usr/lib/i386-linux-gnu/libSDL-1.2.so.0.11.3
+   fun:SDL_AudioInit
+   fun:SDL_InitSubSystem
+   fun:SDL_OpenAudio
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:calloc
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   obj:/usr/lib/i386-linux-gnu/libasound.so.2.0.0
+   fun:snd_config_hook_load
+   fun:snd_config_hook_load_for_all_cards
+   obj:*
+}
+
+

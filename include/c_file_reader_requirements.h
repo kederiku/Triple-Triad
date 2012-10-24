@@ -1,0 +1,6 @@
+#ifndef __C_FILE_READER_REQUIREMENTS__
+#define __C_FILE_READER_REQUIREMENTS__
+
+#define D_DEFAULT_READ_STEP 4096
+
+#endif
