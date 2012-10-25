@@ -1,6 +1,7 @@
 #include <iostream>
 #include <SDL/SDL.h>
 #include "include/Lib2D.h"
+//#include "game.h"
 #include "menu.h"
 
 int
@@ -14,18 +15,20 @@ error(const char* err, Lib2D::Engine& engine)
 int
 main(void)
 {
-	uint			flags;
 	Lib2D::Engine		engine;
 	Menu			menu;
+//	Game			game;
 
-	flags = Lib2D::E_HARDWARE;
-	if (engine.init() == false)
-		return error("could not init Lib2D", engine);
-	if (engine.init_main_window(800, 800, 32, flags) == false)
-		return error("could not init main window", engine);
 	try
 	{
-		menu.Init();
+		if (engine.init() == false)
+			return error("could not init Lib2D", engine);
+		if (engine.init_main_window(800, 800, 32, Lib2D::E_HARDWARE) == false)
+			return error("could not init main window", engine);
+		if(menu.Create_Menu() == false)
+			return -1;
+//		if (game.init_board() == false)
+//			return error("game no init", engine);
 		if (engine.run() == false)
 			return error("program terminated unexpectedly", engine);
 		engine.cleaner();
